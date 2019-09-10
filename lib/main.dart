@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_keyboard/home.dart';
 
 ///this is added to native project
-void main() => runApp(_widgetForRoute(window.defaultRouteName));
+//void main() => runApp(_widgetForRoute(window.defaultRouteName));
 
 ///this is pure flutter
-//void main() => runApp(MyApp());
+void main() => runApp(MyApp());
 
 Widget _widgetForRoute(String route) {
   if (route == 'route') {

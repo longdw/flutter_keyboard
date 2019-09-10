@@ -12,70 +12,123 @@ class HomeWidget extends StatelessWidget {
 
         Flexible(
           fit: FlexFit.tight,
-          child: CustomScrollView(
-            slivers: <Widget>[
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
 
-              SliverToBoxAdapter(
-                child: SizedBox(
+                SizedBox(
                   width: 100,
                   height: 160,
                   child: Container(
                     color: Colors.blue,
                   ),
                 ),
-              ),
 
-              SliverToBoxAdapter(
-                child: SizedBox(
+                SizedBox(
                   width: 100,
                   height: 140,
                   child: Container(
                     color: Colors.grey,
                   ),
                 ),
-              ),
 
-              SliverToBoxAdapter(
-                child: SizedBox(
+                SizedBox(
                   width: 100,
                   height: 120,
                   child: Container(
                     color: Colors.red,
                   ),
                 ),
-              ),
 
-              SliverToBoxAdapter(
-                child: SizedBox(
+                SizedBox(
                   width: 100,
                   height: 100,
                   child: Container(
                     color: Colors.deepPurple,
                   ),
                 ),
-              ),
 
-              SliverToBoxAdapter(
-                child: TextField(
+                TextField(
                   decoration: InputDecoration(
                       hintText: 'this is first input text'
                   ),
                 ),
-              ),
 
-              SliverToBoxAdapter(
-                child: Padding(padding: EdgeInsets.only(top: 20),),
-              ),
+                Padding(padding: EdgeInsets.only(top: 20),),
 
-              SliverToBoxAdapter(
-                child: TextField(
+                TextField(
                   decoration: InputDecoration(
                       hintText: 'this is second input text'
                   ),
                 ),
-              ),
-            ],
+
+              ],
+            ),
           ),
+//          child: CustomScrollView(
+//            slivers: <Widget>[
+//
+//              SliverToBoxAdapter(
+//                child: SizedBox(
+//                  width: 100,
+//                  height: 160,
+//                  child: Container(
+//                    color: Colors.blue,
+//                  ),
+//                ),
+//              ),
+//
+//              SliverToBoxAdapter(
+//                child: SizedBox(
+//                  width: 100,
+//                  height: 140,
+//                  child: Container(
+//                    color: Colors.grey,
+//                  ),
+//                ),
+//              ),
+//
+//              SliverToBoxAdapter(
+//                child: SizedBox(
+//                  width: 100,
+//                  height: 120,
+//                  child: Container(
+//                    color: Colors.red,
+//                  ),
+//                ),
+//              ),
+//
+//              SliverToBoxAdapter(
+//                child: SizedBox(
+//                  width: 100,
+//                  height: 100,
+//                  child: Container(
+//                    color: Colors.deepPurple,
+//                  ),
+//                ),
+//              ),
+//
+//              SliverToBoxAdapter(
+//                child: TextField(
+//                  decoration: InputDecoration(
+//                      hintText: 'this is first input text'
+//                  ),
+//                ),
+//              ),
+//
+//              SliverToBoxAdapter(
+//                child: Padding(padding: EdgeInsets.only(top: 20),),
+//              ),
+//
+//              SliverToBoxAdapter(
+//                child: TextField(
+//                  decoration: InputDecoration(
+//                      hintText: 'this is second input text'
+//                  ),
+//                ),
+//              ),
+//            ],
+//          ),
         ),
 
         Container(
